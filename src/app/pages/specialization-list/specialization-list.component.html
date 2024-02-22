@@ -1,0 +1,46 @@
+<div *ngIf="!specializationList" class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+
+<table class="table" *ngIf="specializationList">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Specialization Section</th>
+            <th scope="col">Action</th>
+            <th scope="col">Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let specialization of specializationList;let i = index">
+            <th scope="row">{{i}}</th>
+            <td>{{specialization.specializationSection}}</td>
+            <td><button (click)="setSelectedSpecialization(specialization)" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop" class="btn btn-danger">Remove</button></td>
+                    <td><button (click)="editSpecialization(specialization)" class="btn btn-info">Edit</button></td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body p-4 text-center">
+                <h5 class="mb-0">Are you sure delete this ?</h5>
+                <p class="mb-0">You can not reverse your action again.</p>
+            </div>
+            <div class="modal-footer flex-nowrap p-0">
+                <button (click)="removeSpecialization() " type="button"
+                    class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"
+                    data-bs-dismiss="modal"><strong>Yes,
+                        delete</strong></button>
+                <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"
+                    data-bs-dismiss="modal">No thanks</button>
+            </div>
+        </div>
+    </div>
+</div>

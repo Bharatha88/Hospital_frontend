@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.firstName" placeholder="first name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.lastName" placeholder="last name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Gender</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.age" placeholder="gender">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Address</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.address" placeholder="address">
+      </div>
+    
+      <button (click)="saveAdmin() " type="button" class="btn btn-warning">Re-Submit</button>
+    
+    
+    </div>
+    
+    
+    

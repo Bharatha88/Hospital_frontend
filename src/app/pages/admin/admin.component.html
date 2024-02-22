@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.firstName"
+            placeholder="First name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.lastName" placeholder="Last name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Gender</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.gender" placeholder="Gender">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Address</label>
+        <input type="email" class="form-control" [(ngModel)]="admin.address" placeholder="Address">
+    </div>
+    
+    <button (click)="saveAdmin()" type="button" class="btn btn-warning">Submit</button>
+
+
+</div>

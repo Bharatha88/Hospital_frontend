@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Appointment Number</label>
+        <input type="email" class="form-control" [(ngModel)]="appointment.appointmentNumber" placeholder="appointment number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Doctor Name</label>
+        <input type="email" class="form-control" [(ngModel)]="appointment.doctorName" placeholder="doctor name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Patient Name</label>
+        <input type="email" class="form-control" [(ngModel)]="appointment.patientName" placeholder="patient name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Status</label>
+        <input type="email" class="form-control" [(ngModel)]="appointment.status" placeholder="status">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Date and Time</label>
+        <input type="email" class="form-control" [(ngModel)]="appointment.dateAndTime" placeholder="date and time">
+      </div>
+    
+      <button (click)="saveAppointment() " type="button" class="btn btn-warning">Re-Submit</button>
+    
+    
+    </div>
+    
+    
+    
+

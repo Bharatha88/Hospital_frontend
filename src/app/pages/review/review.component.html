@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Review Number</label>
+        <input type="email" class="form-control" [(ngModel)]="review.reviewNumber" placeholder="review number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Rating</label>
+        <input type="email" class="form-control" [(ngModel)]="review.rating" placeholder="rating">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Comment</label>
+        <input type="email" class="form-control" [(ngModel)]="review.comment" placeholder="comment">
+      </div>
+          
+      <button (click)="saveReview() " type="button" class="btn btn-warning">Submit</button>
+    
+    
+    </div>
+    
+    
+    
+
+

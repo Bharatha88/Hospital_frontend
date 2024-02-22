@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Element Number</label>
+        <input type="email" class="form-control" [(ngModel)]="element.elementNumber" placeholder="element number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Unit Price</label>
+        <input type="email" class="form-control" [(ngModel)]="element.unitPrice" placeholder="unit price">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Description</label>
+        <input type="email" class="form-control" [(ngModel)]="element.description" placeholder="description">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Quantity</label>
+        <input type="email" class="form-control" [(ngModel)]="element.quantity" placeholder="quantity">
+      </div>
+    
+      <button (click)="saveElement() " type="button" class="btn btn-warning">Re-Submit</button>
+       
+    </div>
+    
+    
+    

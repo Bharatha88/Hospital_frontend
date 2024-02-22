@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Prescription Number</label>
+        <input type="email" class="form-control" [(ngModel)]="prescription.prescriptionNumber" placeholder="prescription number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Advice</label>
+        <input type="email" class="form-control" [(ngModel)]="prescription.advice" placeholder="advice">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Medicine</label>
+        <input type="email" class="form-control" [(ngModel)]="prescription.medicine" placeholder="medicine">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Remark</label>
+        <input type="email" class="form-control" [(ngModel)]="prescription.remark" placeholder="remark">
+      </div>
+    
+      <button (click)="savePrescription() " type="button" class="btn btn-warning">Submit</button>
+    
+    
+    </div>
+    
+    
+    
+

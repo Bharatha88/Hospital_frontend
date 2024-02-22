@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="email" class="form-control" [(ngModel)]="doctor.firstName" placeholder="first name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="email" class="form-control" [(ngModel)]="doctor.lastName" placeholder="last name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Age</label>
+        <input type="email" class="form-control" [(ngModel)]="doctor.age" placeholder="age">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Experience</label>
+        <input type="email" class="form-control" [(ngModel)]="doctor.experience" placeholder="experience">
+      </div>
+    
+      <button (click)="saveDoctor() " type="button" class="btn btn-warning">Re-Submit</button>
+    
+    
+    </div>
+    
+    
+    

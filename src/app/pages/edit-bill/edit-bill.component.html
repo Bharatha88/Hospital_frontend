@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Bill Number</label>
+        <input type="email" class="form-control" [(ngModel)]="bill.billNumber" placeholder="bill number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Amount</label>
+        <input type="email" class="form-control" [(ngModel)]="bill.amount" placeholder="bill number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Date</label>
+        <input type="email" class="form-control" [(ngModel)]="bill.date" placeholder="date">
+      </div>
+         
+      <button (click)="saveBill() " type="button" class="btn btn-warning">Re-Submit</button>
+    
+    
+    </div>
+    
+    
+    
+
