@@ -1,26 +1,23 @@
 <div class="container">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Code</label>
-        <input type="email" class="form-control" [(ngModel)]="item.code" placeholder="code">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="email" class="form-control" [(ngModel)]="item.Name" placeholder="name">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Dob</label>
-        <input type="email" class="form-control" [(ngModel)]="item.description" placeholder="description">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Direction</label>
-        <input type="email" class="form-control" [(ngModel)]="item.direction" placeholder="direction">
-      </div>
-    
-      <button (click)="saveItem() " type="button" class="btn btn-warning">Submit</button>
-    
-    
-    </div>
-    
-    
-    
+  <h3>Create Item</h3><br>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Code</label>
+    <input type="email" class="form-control" [(ngModel)]="item.code" placeholder="code">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="email" class="form-control" [(ngModel)]="item.Name" placeholder="name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Dob</label>
+    <input type="email" class="form-control" [(ngModel)]="item.description" placeholder="description">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Direction</label>
+    <input type="email" class="form-control" [(ngModel)]="item.direction" placeholder="direction">
+  </div>
 
+  <button (click)="saveItem() " type="button" class="btn btn-warning">Submit</button>
+
+
+</div>

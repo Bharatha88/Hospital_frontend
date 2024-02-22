@@ -23,9 +23,9 @@
             <td>{{appointment.patientName}}</td>
             <td>{{appointment.Status}}</td>
             <td>{{appointment.dateAndTime}}</td>
-            <td><button (click)="setSelectedAppointment(appointment)" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                    class="btn btn-danger">Remove</button></td>
-            <td><button   (click)="editAppointment(appointment)" class="btn btn-info"><a routerLink="edit-appointment"></a>Edit</button></td>
+            <td><button (click)="setSelectedAppointment(appointment)" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop" class="btn btn-danger">Remove</button></td>
+            <td><button (click)="editAppointment(appointment)" class="btn btn-info">Edit</button></td>
 
 
         </tr>
@@ -53,5 +53,3 @@
         </div>
     </div>
 </div>
-
-

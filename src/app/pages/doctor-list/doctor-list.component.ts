@@ -1,4 +1,4 @@
-import { HttpClient,HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -12,10 +12,10 @@ export class DoctorListComponent implements OnInit {
 
   private http;
   public doctorList: any;
-  public selectedDoctor:any;
-  public updateDoctorData: any = {}; 
+  public selectedDoctor: any;
+  public updateDoctorData: any = {};
 
-  constructor(private httpClient: HttpClient,private router:Router) {
+  constructor(private httpClient: HttpClient, private router: Router) {
     this.http = httpClient;
   }
   ngOnInit(): void {
@@ -30,12 +30,11 @@ export class DoctorListComponent implements OnInit {
       })
   }
 
-  setSelectedDoctor(doctor:any){
+  setSelectedDoctor(doctor: any) {
     this.selectedDoctor = doctor;
   }
 
   removeDoctor() {
-
 
     let apiUrl = "http://localhost:8080/doctor/" + this.selectedDoctor.id;
 
@@ -43,14 +42,14 @@ export class DoctorListComponent implements OnInit {
       .subscribe(data => {
         console.log(data);
         this.loadDoctorInfo();
-        this.selectedDoctor=null;
+        this.selectedDoctor = null;
       })
   }
+
   editDoctor(doctor: any) {
     console.log("Editing doctor:", doctor);
-    this.router.navigate(['edit-doctor',doctor.id]);
+    this.router.navigate(['edit-doctor', doctor.id]);
   }
-  
 
   updateDoctor() {
     if (!this.updateDoctorData.id) {

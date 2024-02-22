@@ -1,8 +1,8 @@
 <div class="container">
+    <h3>Bill Create Here</h3><br>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Bill Number</label>
-        <input type="email" class="form-control" [(ngModel)]="bill.billNumber"
-            placeholder="Bill number">
+        <input type="email" class="form-control" [(ngModel)]="bill.billNumber" placeholder="Bill number">
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Amount</label>
@@ -12,7 +12,7 @@
         <label for="exampleFormControlInput1" class="form-label">Date</label>
         <input type="email" class="form-control" [(ngModel)]="bill.date" placeholder="Date">
     </div>
-    
+
     <button (click)="saveBill()" type="button" class="btn btn-warning">Submit</button>
 
 

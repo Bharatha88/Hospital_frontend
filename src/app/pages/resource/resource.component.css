@@ -1,0 +1,12 @@
+h1{
+   font-optical-sizing: 10px;
+   font-style: oblique;
+   font-weight: 200;
+   color: rgb(130, 21, 21);
+   margin-left: 100px;
+}
+h4{
+    font-style: inherit;
+    font-weight: 300;
+    color: blueviolet;
+}

@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./edit-doctor.component.css']
 })
 export class EditDoctorComponent {
+  
   private http;
 
   public doctor: any = {

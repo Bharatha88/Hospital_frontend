@@ -20,11 +20,20 @@ export class ReviewComponent {
     rating: null,
     comment: null,
   }
-
+  //Press submit button and sava data
   saveReview() {
     this.http.post("http://localhost:8080/review", this.review)
       .subscribe(data => {
         console.log(data)
+        this.clearForm();
       })
+  }
+  //When press submit button and clear all data
+  clearForm() {
+    this.review = {
+      reviewNumber: null,
+      rating: null,
+      comment: null,
+    };
   }
 }

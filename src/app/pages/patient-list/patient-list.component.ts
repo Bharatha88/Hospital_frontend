@@ -36,7 +36,6 @@ export class PatientListComponent implements OnInit {
 
   removePatient() {
 
-
     let apiUrl = "http://localhost:8080/patient/" + this.selectedPatient.id;
 
     this.http.delete(apiUrl)
@@ -57,7 +56,6 @@ export class PatientListComponent implements OnInit {
       console.error("No patient selected for update.");
       return;
     }
-
     let apiUrl = "http://localhost:8080/patient/" + this.updatePatientData.id;
 
     // Set up headers if needed
@@ -68,7 +66,7 @@ export class PatientListComponent implements OnInit {
       .subscribe(response => {
         console.log(response);
         this.loadPatientInfo();
-        this.selectedPatient = null; // Clear selected doctor after update
+        this.selectedPatient = null; // Clear selected patient after update
         this.updatePatientData = {}; // Clear update data after update
       });
   }

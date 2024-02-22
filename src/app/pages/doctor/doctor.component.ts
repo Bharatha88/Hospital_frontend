@@ -22,14 +22,15 @@ export class DoctorComponent {
     experience: null
   }
 
+  //Press submit button and save all data
   saveDoctor() {
-    this.http.post("http://localhost:8080/doctor",this.doctor)
-    .subscribe(data=>{
-      console.log(data)
-      this.clearForm();
-    })
+    this.http.post("http://localhost:8080/doctor", this.doctor)
+      .subscribe(data => {
+        console.log(data)
+        this.clearForm();
+      })
   }
-
+  //When Submitting all data clear form
   clearForm() {
     this.doctor = {
       firstName: null,

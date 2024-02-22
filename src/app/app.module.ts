@@ -41,6 +41,8 @@ import { ReviewComponent } from './pages/review/review.component';
 import { ReviewListComponent } from './pages/review-list/review-list.component';
 import { EditReviewComponent } from './pages/edit-review/edit-review.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ResourceComponent } from './pages/resource/resource.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -82,6 +84,8 @@ import { AboutComponent } from './pages/about/about.component';
     ReviewListComponent,
     EditReviewComponent,
     AboutComponent,
+    ResourceComponent,
+    ContactComponent,
 
   ],
   imports: [

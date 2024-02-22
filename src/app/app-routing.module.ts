@@ -31,6 +31,9 @@ import { EditSpecializationComponent } from './pages/edit-specialization/edit-sp
 import { ReviewComponent } from './pages/review/review.component';
 import { ReviewListComponent } from './pages/review-list/review-list.component';
 import { EditReviewComponent } from './pages/edit-review/edit-review.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ResourceComponent } from './pages/resource/resource.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -156,6 +159,18 @@ const routes: Routes = [
   {
     path:"edit-review/:id",
     component:EditReviewComponent
+  },
+  {
+    path:"about",
+    component:AboutComponent
+  },
+  {
+    path:"resource",
+    component:ResourceComponent
+  },
+  {
+    path:"contact",
+    component:ContactComponent
   }
 ];
 

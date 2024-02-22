@@ -36,7 +36,6 @@ export class BillListComponent implements OnInit {
 
   removeBill() {
 
-
     let apiUrl = "http://localhost:8080/bill/" + this.selectedBill.id;
 
     this.http.delete(apiUrl)
@@ -46,6 +45,7 @@ export class BillListComponent implements OnInit {
         this.selectedBill = null;
       })
   }
+  
   editBill(bill: any) {
     console.log("Editing bill:", bill);
     this.router.navigate(['edit-bill', bill.id]);
